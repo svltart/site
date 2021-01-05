@@ -1,0 +1,20 @@
+#ultra-sun {
+  background-image: url(assets/alola-ultra-sun-nt.svg) !important;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 100%;
+}
+
+#ultra-moon {
+  background-image: url(assets/alola-ultra-moon-nt.svg) !important;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 100%;
+}
+
+#sun {
+  background-image: url(assets/alola-sun-nt.svg) !important;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 100%;
+}
