@@ -1,3 +1,27 @@
+@font-face {
+  font-family: 'DIN';
+  src: url("assets/din1451alt.ttf") format("truetype");
+}
+
+* {
+  font-family: 'DIN', sans-serif;
+}
+
+body {
+  background-image: url(assets/alola-sun-nt.svg) !important;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 100%;
+}
+
+#moon {
+  background-image: url(assets/alola-moon-nt.svg) !important;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 100%;
+}
+
+
 #ultra-sun {
   background-image: url(assets/alola-ultra-sun-nt.svg) !important;
   background-attachment: fixed;
@@ -12,9 +36,8 @@
   background-size: 100%;
 }
 
-#sun {
-  background-image: url(assets/alola-sun-nt.svg) !important;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: 100%;
+#title {
+  font-size: 72px;
+  font-weight: 100;
+  color: white;
 }
