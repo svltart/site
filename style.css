@@ -15,6 +15,11 @@ body {
 }
 
 #moon {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   background-image: url(assets/alola-moon-nt.svg) !important;
   background-attachment: fixed;
   background-position: center;
@@ -23,6 +28,11 @@ body {
 
 
 #ultra-sun {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   background-image: url(assets/alola-ultra-sun-nt.svg) !important;
   background-attachment: fixed;
   background-position: center;
@@ -30,6 +40,11 @@ body {
 }
 
 #ultra-moon {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   background-image: url(assets/alola-ultra-moon-nt.svg) !important;
   background-attachment: fixed;
   background-position: center;
