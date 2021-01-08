@@ -3,8 +3,12 @@
   src: url("assets/din1451alt.ttf") format("truetype");
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
-  font-family: 'DIN', sans-serif;
+  font-family: 'DIN', sans-serif !important;
 }
 
 body {
@@ -51,8 +55,70 @@ body {
   background-size: 100%;
 }
 
+.title {
+  font-weight: 100;
+}
+
 #title {
+  font-weight: 100;
   font-size: 72px;
+  color: white;
+  margin-bottom: 1px;
+}
+
+#subtitle {
   font-weight: 100;
   color: white;
+}
+
+#home .button, #social .button {
+  width: 100%;
+  margin-bottom: 10px;
+  justify-content: left;
+  background: rgba(255, 255, 255, 0.95);
+}
+
+#home .button {
+  color: #ee2a7b;
+}
+
+#social .button {
+  color: #ed422b;
+}
+
+.box {
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.subheading {
+  display: inline-block;
+}
+
+.subheading h1 {
+  font-size: 48px;
+  margin-bottom: 1px;
+}
+
+#map {
+  background-image: url(assets/pfpmap.png);
+  background-image: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0)), url(assets/pfpmap.png), linear-gradient(to right, rgba(0,167,157,0), rgba(0,167,157,1));
+  background-position: left 0, right -160px bottom 50%, right -160px bottom 50%;
+  background-size: 50% 110%, auto 110%, auto 110%;
+  background-repeat: no-repeat;
+  overflow: clip;
+}
+
+#map * {
+  z-index: 1;
+}
+
+#map .cover {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 6px;
+  background-image: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0));
+  z-index: -1;
 }
