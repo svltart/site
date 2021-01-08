@@ -1,5 +1,5 @@
 $(window).scroll($.debounce(50, function(){
-  if ($('#social').offset().top - $(window).scrollTop() < 100) {
+  if ($('#shop').offset().top - $(window).scrollTop() < 100) {
     $("#moon").slideUp("slow");
   } else {
     $("#moon").slideDown();
