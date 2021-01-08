@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SVLT</title>
     <link rel="stylesheet" href="bulma.min.css">
+    <link rel="stylesheet" href="bulma-carousel.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
@@ -12,6 +13,7 @@
     <script src="bg.js"></script>
   </head>
   <body>
+    <div id="sun"></div>
     <div id="ultra-sun"></div>
     <div id="ultra-moon"></div>
     <div id="moon"></div>
@@ -34,20 +36,21 @@
       </div>
 
       <div class="container">
-        <h1 class="title" id="subtitle">TRADITIONAL ARTIST</h1>
+        <h1 class="title" id="subtitle">TRADITIONAL ARTIST<br>(among other things)</h1>
         <div class="columns">
           <div class="column is-full-mobile is-half-tablet is-one-third-desktop is-one-quarter-widescreen is-one-quarter-fullhd">
-            <a href="#head" class="button is-text is-large">
+            <p id="tag">ON ALL SOCIAL SITES: @svltart<p>
+            <a href="https://twitter.com/svltart" class="button is-text is-large">
               <span class="icon is-large">
                 <i class="fab fa-2x fa-twitter"></i>
               </span>
             </a>
-            <a href="#head" class="button is-text is-large">
+            <a href="https://svltart.tumblr.com/" class="button is-text is-large">
               <span class="icon is-large">
                 <i class="fab fa-2x fa-tumblr"></i>
               </span>
             </a>
-            <a href="#head" class="button is-text is-large">
+            <a href="https://instagram.com/svltart" class="button is-text is-large">
               <span class="icon is-large">
                 <i class="fab fa-2x fa-instagram"></i>
               </span>
@@ -115,31 +118,190 @@
             </div>
           </article>
         </div>
+      </div>
+    </section>
 
-        <div class="columns">
-          <div class="column is-full">
+    <section class="section" id="pfp">
+      <div class="container">
+        <div class="columns is-mobile">
+          <div class="column is-10-mobile is-8-tablet is-half-desktop is-half-widescreen is-half-fullhd">
             <div class="box" id="map">
-              <div class="cover"></div>
-              <h1 class="title" style="color:#00a79d">
-                POKÉMON FROM PLACES
-              </h1>
+              <div class="box inner-title">
+                <h1 class="title">
+                  POKÉMON FROM PLACES
+                </h1>
+              </div>
               <p class="subtitle">
                 yeeeeee <strong>e</strong>!
               </p>
-              <p>e</p>
-              <p>e</p>
-              <p>e</p>
-              <p>e</p>
-              <p>e</p>
-              <p>e</p>
-              <p>e</p>
-              <p>e</p>
-              <p>e</p>
-              <p>e</p>
-              <p>e</p>
-              <p>e</p>
             </div>
           </div>
+
+          <div class="column is-10-mobile is-7-tablet is-6-desktop is-5-widescreen is-5-fullhd">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-3by2">
+                  <img src="pfp/J.png" alt="Pokémon from Places J">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  OCEANSIDE, CA
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="column is-10-mobile is-7-tablet is-6-desktop is-5-widescreen is-5-fullhd">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-3by2">
+                  <img src="pfp/I.png" alt="Pokémon from Places I">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  MONTEREY, CA
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="column is-10-mobile is-7-tablet is-6-desktop is-5-widescreen is-5-fullhd">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-3by2">
+                  <img src="pfp/B.png" alt="Pokémon from Places B">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  MT. ST. HELENS, WA
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="column is-10-mobile is-7-tablet is-6-desktop is-5-widescreen is-5-fullhd">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-3by2">
+                  <img src="pfp/C.png" alt="Pokémon from Places C">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  HONOLULU, HAWAII
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="column is-10-mobile is-7-tablet is-6-desktop is-5-widescreen is-5-fullhd">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-3by2">
+                  <img src="pfp/A.png" alt="Pokémon from Places A">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  PORTLAND, OR
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="column is-10-mobile is-7-tablet is-6-desktop is-5-widescreen is-5-fullhd">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-3by2">
+                  <img src="pfp/D.png" alt="Pokémon from Places D">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  CALIFORNIA
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="column is-10-mobile is-7-tablet is-6-desktop is-5-widescreen is-5-fullhd">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-3by2">
+                  <img src="pfp/E.png" alt="Pokémon from Places E">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  LOS ANGELES, CA
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="column is-10-mobile is-7-tablet is-6-desktop is-5-widescreen is-5-fullhd">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-3by2">
+                  <img src="pfp/F.png" alt="Pokémon from Places F">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  LOS ANGELES, CA
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="column is-10-mobile is-7-tablet is-6-desktop is-5-widescreen is-5-fullhd">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-3by2">
+                  <img src="pfp/G.png" alt="Pokémon from Places G">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  SAN DIEGO, CA
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="column is-10-mobile is-7-tablet is-6-desktop is-5-widescreen is-5-fullhd">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-3by2">
+                  <img src="pfp/H.png" alt="Pokémon from Places H">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  GRAND CANYON, AZ
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="column is-10-mobile is-7-tablet is-6-desktop is-5-widescreen is-5-fullhd">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-3by2">
+                  <img src="pfp/K.png" alt="Pokémon from Places K">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  UTAH
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
@@ -172,7 +334,7 @@
             <div class="card">
               <div class="card-image">
                 <figure class="image">
-                  <img src="assets/aug 2020 ad 1.png" alt="Cover image">
+                  <img src="assets/ad 1.png" alt="Cover image">
                 </figure>
               </div>
             </div>
@@ -181,21 +343,12 @@
             <div class="card">
               <div class="card-image">
                 <figure class="image">
-                  <img src="assets/dec 2020 ad 2.png" alt="Item 1">
+                  <img src="assets/ad 2.png" alt="Item 1">
                 </figure>
               </div>
               <div class="card-image">
                 <figure class="image">
-                  <img src="assets/dec 2020 ad 3.png" alt="Item 2">
-                </figure>
-              </div>
-            </div>
-          </div>
-          <div class="column is-full-mobile is-full-tablet is-half-desktop is-one-third-widescreen is-one-third-fullhd">
-            <div class="card">
-              <div class="card-image">
-                <figure class="image">
-                  <img src="assets/dec 2020 ad 4.png" alt="Surcharges 1">
+                  <img src="assets/ad 3.png" alt="Item 2">
                 </figure>
               </div>
             </div>
@@ -204,7 +357,16 @@
             <div class="card">
               <div class="card-image">
                 <figure class="image">
-                  <img src="assets/dec 2020 ad 5.png" alt="Surcharges 2">
+                  <img src="assets/ad 4.png" alt="Surcharges 1">
+                </figure>
+              </div>
+            </div>
+          </div>
+          <div class="column is-full-mobile is-full-tablet is-half-desktop is-one-third-widescreen is-one-third-fullhd">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image">
+                  <img src="assets/ad 5.png" alt="Surcharges 2">
                 </figure>
               </div>
             </div>
@@ -238,6 +400,7 @@
 
       </div>
     </section>
+    <script src="bulma-carousel.min.js"></script>
     <script src="https://kit.fontawesome.com/a9d781149c.js" crossorigin="anonymous"></script>
   </body>
 </html>

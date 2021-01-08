@@ -55,6 +55,18 @@ body {
   background-size: 100%;
 }
 
+#sun {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url(assets/alola-sun-nt.svg) !important;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 100%;
+}
+
 .title {
   font-weight: 100;
 }
@@ -86,10 +98,23 @@ body {
   color: #ed422b;
 }
 
+#tag {
+  font-size: 18px;
+  color: white;
+}
+
 .button.is-text {
-  color: #00aeef !important;
+  color: #ffffff !important;
   text-decoration: none;
   margin-bottom: 10px;
+}
+
+.button.is-text:focus, .button.is-text:hover {
+  color: #ee2a7b !important;
+}
+
+#home .button:active {
+  color: #00aeef !important;
 }
 
 .box {
@@ -105,26 +130,40 @@ body {
   margin-bottom: 1px;
 }
 
+#pfp .box .box h1 {
+  color: #ea9459;
+}
+
+#art {
+  padding-bottom: 024px;
+}
+
+#pfp {
+  padding-top: 0;
+  overflow-x: scroll;
+}
+
 #map {
   background-image: url(assets/pfpmap.png);
   background-image: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0)), url(assets/pfpmap.png), linear-gradient(to right, rgba(0,167,157,0), rgba(0,167,157,1));
   background-position: left 0, right -160px bottom 50%, right -160px bottom 50%;
-  background-size: 50% 110%, auto 110%, auto 110%;
+  background-size: 800px 110%, auto 110%, auto 110%;
   background-repeat: no-repeat;
   overflow: clip;
+  min-height: 100%;
 }
 
 #map * {
   z-index: 1;
 }
 
-#map .cover {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  border-radius: 6px;
-  background-image: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0));
-  z-index: -1;
+.box.inner-title {
+  box-shadow: none;
+  display: inline-block;
+  padding: 10px;
+  margin: -10px 0 0 -10px;
+}
+
+#commissions .card h1 {
+  color: #00a79d;
 }
