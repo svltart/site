@@ -157,16 +157,6 @@ body {
   color: #ed422b;
 }
 
-@media only screen and (max-width: 768px) {
-  #home .button.wide {
-    box-shadow: 0 0 5px #ee2a7b;
-  }
-
-  #shop .button.wide {
-    box-shadow: 0 0 5px #ed422b;
-  }
-}
-
 #tag {
   font-size: 18px;
   color: white;
@@ -184,6 +174,20 @@ body {
 
 #home .button:active {
   color: #00aeef !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .button.is-text, .button.is-text:focus, .button.is-text:hover {
+    color: #00aeef !important;
+  }
+
+  #home .button.wide {
+    box-shadow: 0 0 5px #ee2a7b;
+  }
+
+  #shop .button.wide {
+    box-shadow: 0 0 5px #ed422b;
+  }
 }
 
 .box {
