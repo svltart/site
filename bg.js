@@ -9,7 +9,7 @@ $(window).scroll($.debounce(50, function(){
   } else {
     $("#ultra-moon").slideDown();
   }
-  if ($('#commissions').offset().top - $(window).scrollTop() < 500) {
+  if ($('#commissions').offset().top - $(window).scrollTop() < 300) {
     $("#ultra-sun").slideUp("slow");
   } else {
     $("#ultra-sun").slideDown();

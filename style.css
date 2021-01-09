@@ -86,8 +86,79 @@ body {
 .wide {
   width: 100%;
   margin-bottom: 10px;
-  justify-content: left;
   background: rgba(255, 255, 255, 0.95);
+}
+
+@media only screen and (min-width: 769px) {
+  .wide {
+    justify-content: left;
+  }
+}
+
+#carousel-column {
+  margin-bottom: 10px;
+}
+
+#carousel-wrapper {
+  position: relative;
+  height: 100%;
+}
+
+#carousel-box {
+  min-height: 440px;
+  max-height: 440px;
+  bottom: -201px;
+}
+
+@media only screen and (max-height: 724px) {
+  #carousel-box {
+    bottom: -58px;
+  }
+}
+
+@media only screen and (max-height: 580px) {
+  #carousel-box {
+    bottom: 0px;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  #carousel-box {
+    position: absolute;
+    width: 100%;
+  }
+}
+
+#carousel {
+  overflow: hidden;
+}
+
+.carousel:focus, .slider:focus, .slider-container:focus {
+  outline: none;
+}
+
+.slider-item, .item {
+  max-width: 610px;
+}
+
+#carousel .card {
+  margin-right: 10px;
+  min-height: 400px;
+  max-width: 600px;
+}
+
+#carousel .card-image {
+  min-width: 600px;
+}
+
+.slider-navigation-previous, .slider-navigation-next {
+  margin: 0 10px;
+  width: 20px;
+  height: 20px;
+}
+
+.slider-pagination {
+  display: block;
 }
 
 #home .button {
@@ -96,6 +167,16 @@ body {
 
 #shop .button {
   color: #ed422b;
+}
+
+@media only screen and (max-width: 768px) {
+  #home .button.wide {
+    box-shadow: 0 0 5px #ee2a7b;
+  }
+
+  #shop .button.wide {
+    box-shadow: 0 0 5px #ed422b;
+  }
 }
 
 #tag {
