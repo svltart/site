@@ -105,21 +105,9 @@ body {
 }
 
 #carousel-box {
-  min-height: 440px;
-  max-height: 440px;
-  bottom: -201px;
-}
-
-@media only screen and (max-height: 724px) {
-  #carousel-box {
-    bottom: -58px;
-  }
-}
-
-@media only screen and (max-height: 580px) {
-  #carousel-box {
-    bottom: 0px;
-  }
+  min-height: 340px;
+  max-height: 340px;
+  bottom: 0px;
 }
 
 @media only screen and (min-width: 769px) {
@@ -138,17 +126,17 @@ body {
 }
 
 .slider-item, .item {
-  max-width: 610px;
+  max-width: 460px;
 }
 
 #carousel .card {
   margin-right: 10px;
-  min-height: 400px;
-  max-width: 600px;
+  min-height: 300px;
+  max-width: 450px;
 }
 
 #carousel .card-image {
-  min-width: 600px;
+  min-width: 450px;
 }
 
 .slider-navigation-previous, .slider-navigation-next {
