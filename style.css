@@ -24,6 +24,7 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
+  background-color: #0f2556;
   background-image: url(assets/alola-moon-nt.svg) !important;
   background-attachment: fixed;
   background-position: center;
@@ -37,6 +38,7 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
+  background-color: #00a79d;
   background-image: url(assets/alola-ultra-sun-nt.svg) !important;
   background-attachment: fixed;
   background-position: center;
@@ -49,6 +51,7 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
+  background-color: #00aeef;
   background-image: url(assets/alola-ultra-moon-nt.svg) !important;
   background-attachment: fixed;
   background-position: center;
@@ -61,6 +64,7 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
+  background-color: #ffeabe;
   background-image: url(assets/alola-sun-nt.svg) !important;
   background-attachment: fixed;
   background-position: center;
@@ -203,10 +207,10 @@ body {
   margin-bottom: 1px;
 }
 
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: 768px) {
   .subheading h1 {
     padding-top: 4px;
-    font-size: 36px;
+    font-size: 28px;
   }
 }
 
@@ -221,6 +225,12 @@ body {
 #pfp {
   padding-top: 0;
   overflow-x: scroll;
+}
+
+@media only screen and (max-width: 1023px) {
+  #pfp .is-multiline {
+    flex-wrap: nowrap;
+  }
 }
 
 #map {

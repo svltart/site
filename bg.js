@@ -4,14 +4,14 @@ $(window).scroll($.debounce(50, function(){
   } else {
     $("#moon").slideDown();
   }
-  if ($('#art').offset().top - $(window).scrollTop() < 200) {
+  if ($('#commissions').offset().top - $(window).scrollTop() < 200) {
     $("#ultra-moon").slideUp("slow");
   } else {
     $("#ultra-moon").slideDown();
   }
-  if ($('#commissions').offset().top - $(window).scrollTop() < 300) {
-    $("#ultra-sun").slideUp("slow");
+  if ($('#art').offset().top - $(window).scrollTop() < 300) {
+    $("#sun").slideUp("slow");
   } else {
-    $("#ultra-sun").slideDown();
+    $("#sun").slideDown();
   }
 }));
