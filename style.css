@@ -5,6 +5,7 @@
 
 html {
   scroll-behavior: smooth;
+  background-color: 00a79d;
 }
 
 * {
@@ -12,7 +13,8 @@ html {
 }
 
 body {
-  background-image: url(assets/alola-sun-nt.svg) !important;
+  background-color: 00a79d;
+  background-image: url(assets/alola-ultra-sun-nt.svg) !important;
   background-attachment: fixed;
   background-position: center;
   background-size: 100%;
@@ -180,22 +182,8 @@ body {
   color: #00aeef !important;
 }
 
-@media only screen and (max-width: 768px) {
-  .button.is-text, .button.is-text:focus, .button.is-text:hover {
-    color: #00aeef !important;
-  }
-
-  #home .button.wide {
-    box-shadow: 0 0 5px #ee2a7b;
-  }
-
-  #shop .button.wide {
-    box-shadow: 0 0 5px #ed422b;
-  }
-}
-
 .box {
-  background: rgba(255, 255, 255, 0.95);
+  background: #ffffff;
 }
 
 .subheading {
@@ -209,7 +197,7 @@ body {
 
 @media only screen and (max-width: 768px) {
   .subheading h1 {
-    padding-top: 4px;
+    padding-top: 6px;
     font-size: 28px;
   }
 }
