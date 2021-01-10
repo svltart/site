@@ -27,7 +27,7 @@ body {
   background-image: url(assets/alola-moon-nt.svg) !important;
   background-attachment: fixed;
   background-position: center;
-  background-size: 100%;
+  background-size: cover;
 }
 
 
@@ -40,7 +40,7 @@ body {
   background-image: url(assets/alola-ultra-sun-nt.svg) !important;
   background-attachment: fixed;
   background-position: center;
-  background-size: 100%;
+  background-size: cover;
 }
 
 #ultra-moon {
@@ -52,7 +52,7 @@ body {
   background-image: url(assets/alola-ultra-moon-nt.svg) !important;
   background-attachment: fixed;
   background-position: center;
-  background-size: 100%;
+  background-size: cover;
 }
 
 #sun {
@@ -64,7 +64,7 @@ body {
   background-image: url(assets/alola-sun-nt.svg) !important;
   background-attachment: fixed;
   background-position: center;
-  background-size: 100%;
+  background-size: cover;
 }
 
 .title {
@@ -121,7 +121,7 @@ body {
   overflow: hidden;
 }
 
-.carousel:focus, .slider:focus, .slider-container:focus {
+.carousel:focus, .slider:focus, .slider-coverer:focus {
   outline: none;
 }
 
@@ -203,6 +203,13 @@ body {
   margin-bottom: 1px;
 }
 
+@media only screen and (max-width: 769px) {
+  .subheading h1 {
+    padding-top: 4px;
+    font-size: 36px;
+  }
+}
+
 #pfp .box .box h1 {
   color: #ea9459;
 }
@@ -220,7 +227,7 @@ body {
   background-image: url(assets/pfpmap.png);
   background-image: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0)), url(assets/pfpmap.png), linear-gradient(to right, rgba(0,167,157,0), rgba(0,167,157,1));
   background-position: left 0, right -160px bottom 50%, right -160px bottom 50%;
-  background-size: 800px 110%, auto 110%, auto 110%;
+  background-size: 1200px 110%, auto 110%, auto 110%;
   background-repeat: no-repeat;
   overflow: clip;
   min-height: 100%;
@@ -230,13 +237,55 @@ body {
   z-index: 1;
 }
 
+#map .is-white {
+  background: #f5ab73;
+  color: #ffffff;
+}
+
+#map .is-white:hover {
+  background: #f0a066;
+}
+
+#map .is-white:active {
+  background: #ea9459;
+}
+
 .box.inner-title {
   box-shadow: none;
   display: inline-block;
   padding: 10px;
-  margin: -10px 0 0 -10px;
+  margin: -10px -10px 0 -10px;
+}
+
+#commissions .is-white {
+  background: #00a79d;
+  color: #ffffff;
+}
+
+#commissions .is-white:hover {
+  background: #006e6d;
+}
+
+#commissions .is-white:active {
+  background: #00343d;
 }
 
 #commissions .card h1 {
   color: #00a79d;
+}
+
+.table {
+  background: none;
+}
+
+#contact a {
+  color: #00a79d;
+}
+
+#contact a:hover {
+  color: #006e6d;
+}
+
+#contact a:active {
+  color: #00343d;
 }
