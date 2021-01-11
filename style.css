@@ -72,6 +72,21 @@ body {
   background-size: cover;
 }
 
+.go-home {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 60px;
+  width: 60px;
+  height: 64px;
+  color: #fff;
+  padding-top: 20px;
+  background-color: #363636;
+  border-radius: 0 0 10px 10px;
+  text-align: center;
+  z-index: 1;
+}
+
 .title {
   font-weight: 100;
 }
