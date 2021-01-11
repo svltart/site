@@ -14,10 +14,10 @@
     <script src="bg.js"></script>
   </head>
   <body>
-    <div id="is-hidden-mobile ultra-sun "></div>
-    <div id="is-hidden-mobile sun"></div>
-    <div id="is-hidden-mobile ultra-moon"></div>
-    <div id="is-hidden-mobile moon"></div>
+    <div class="is-hidden-mobile" id="ultra-sun"></div>
+    <div class="is-hidden-mobile" id="sun"></div>
+    <div class="is-hidden-mobile" id="ultra-moon"></div>
+    <div class="is-hidden-mobile" id="moon"></div>
 
     <section class="section" id="home">
       <div class="container">
@@ -26,8 +26,11 @@
 
             <article class="media">
               <div class="media-left">
-                <figure class="image is-64x64">
+                <figure class="image is-64x64 is-hidden-mobile">
                   <img src="assets/Latios-logo-sj.png" alt="Image">
+                </figure>
+                <figure class="image is-64x64 is-hidden-tablet">
+                  <img src="assets/Latios-logo-sj-shiny.png" alt="Image">
                 </figure>
               </div>
               <div class="media-content">
@@ -59,7 +62,7 @@
           </div>
 
           <div class="column is-full-mobile is-6-tablet is-4-desktop is-3-widescreen is-3-fullhd">
-            <a href="#shop" class="button is-white is-large wide is-hidden-desktop"><i class="fas fa-shopping-cart"></i> &nbsp; SHOP</a>
+            <a href="#shop" class="button is-white is-large wide is-hidden-tablet"><i class="fas fa-shopping-cart"></i> &nbsp; SHOP</a>
             <a href="#art" class="button is-white is-large wide"><i class="fas fa-images"></i> &nbsp; GALLERY</a>
             <a href="#commissions" class="button is-white is-large wide"><i class="fas fa-store"></i> &nbsp; COMMISSIONS</a>
             <a href="#contact" class="button is-white is-large wide"><i class="fas fa-comment-alt"></i> &nbsp; CONTACT</a>
@@ -119,8 +122,11 @@
               <article class="media">
                 <div class="media-left">
                   <a href="#">
-                    <figure class="image is-48x48">
+                    <figure class="image is-48x48 is-hidden-mobile">
                       <img src="assets/Latios-logo-sj.png" alt="Image">
+                    </figure>
+                    <figure class="image is-48x48 is-hidden-tablet">
+                      <img src="assets/Latios-logo-sj-shiny.png" alt="Image">
                     </figure>
                   </a>
                 </div>
