@@ -87,6 +87,12 @@ body {
   z-index: 1;
 }
 
+.go-home:hover {
+  padding-top: 18px;
+  color: #fff;
+  background-color: #242424;
+}
+
 .title {
   font-weight: 100;
 }
@@ -108,13 +114,6 @@ body {
   width: 100%;
   margin-bottom: 10px;
   background: rgba(255, 255, 255, 0.95);
-}
-
-@media only screen and (max-width: 768px) {
-  .wide {
-    justify-content: center;
-    color: #ea9459 !important;
-  }
 }
 
 #carousel-column {
@@ -196,6 +195,21 @@ body {
 
 #home .button:active {
   color: #00aeef !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .wide {
+    justify-content: center;
+    color: #ea9459 !important;
+  }
+
+  .button.is-text:focus, .button.is-text:hover {
+    color: #ea9459 !important;
+  }
+
+  #home .button:active {
+    color: #ea9459 !important;
+  }
 }
 
 .box {
