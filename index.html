@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SVLT</title>
+    <link rel="icon" href="assets/Latios-logo-sj.png">
+    <link rel="stylesheet" href="bulma.min.css">
+    <!--<link rel="stylesheet" href="bulma-carousel.min.css">-->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+    <script src="debounce.min.js"></script>
+    <script src="bg.js"></script>
+  </head>
+  <body>
+    <div class="is-hidden-mobile" id="ultra-sun"></div>
+    <div class="is-hidden-mobile" id="sun"></div>
+    <div class="is-hidden-mobile" id="ultra-moon"></div>
+    <div class="is-hidden-mobile" id="moon"></div>
+
+    <a href="#" class="go-home">
+      <i class="fas fa-2x fa-chevron-up"></i>
+    </a>
+
+    <section class="section" id="home">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-full-mobile is-6-tablet is-4-desktop is-3-widescreen is-3-fullhd">
+
+            <article class="media">
+              <div class="media-left">
+                <figure class="image is-64x64 is-hidden-mobile">
+                  <img class="is-rounded" src="assets/latios logo 21.png" alt="Image">
+                </figure>
+                <figure class="image is-64x64 is-hidden-tablet">
+                  <img class="is-rounded" src="assets/latios logo 21 shiny.png" alt="Image">
+                </figure>
+              </div>
+              <div class="media-content">
+                <div class="content">
+                  <h1 class="title" id="title">
+                    SVLT
+                  </h1>
+                </div>
+              </div>
+            </article>
+
+            <h1 class="title" id="subtitle">TRADITIONAL ARTIST<br>(among other things)</h1>
+            <p class="is-hidden-touch" id="tag">ON ALL SOCIAL SITES: @svltart<p>
+            <a href="https://twitter.com/svltart" class="button is-text is-large">
+              <span class="icon is-large">
+                <i class="fab fa-2x fa-twitter"></i>
+              </span>
+            </a>
+            <a href="https://svltart.tumblr.com/" class="button is-text is-large">
+              <span class="icon is-large">
+                <i class="fab fa-2x fa-tumblr"></i>
+              </span>
+            </a>
+            <a href="https://instagram.com/svltart" class="button is-text is-large">
+              <span class="icon is-large">
+                <i class="fab fa-2x fa-instagram"></i>
+              </span>
+            </a>
+            <a href="mailto:svlt.draws@gmail.com" class="button is-text is-large">
+              <span class="icon is-large">
+                <i class="fas fa-2x fa-paper-plane"></i>
+              </span>
+            </a>
+          </div>
+
+          <div class="column is-full-mobile is-6-tablet is-4-desktop is-3-widescreen is-3-fullhd">
+            <a href="#shop" class="button is-white is-large wide is-hidden-tablet"><i class="fas fa-shopping-cart"></i> &nbsp; SHOP</a>
+            <a href="#commissions" class="button is-white is-large wide"><i class="fas fa-store"></i> &nbsp; COMMISSIONS</a>
+            <a href="#art" class="button is-white is-large wide"><i class="fas fa-images"></i> &nbsp; GALLERY</a>
+            <a href="#contact" class="button is-white is-large wide"><i class="fas fa-comment-alt"></i> &nbsp; CONTACT</a>
+          </div>
+
+          <div class="column is-hidden-touch is-4-desktop is-6-widescreen is-6-fullhd">
+          </div>
+
+          <!--<div class="column is-hidden-touch is-1-desktop is-3-widescreen">
+          </div>
+
+          <div class="column is-full-mobile is-7-tablet is-7-desktop is-6-widescreen is-6-fullhd" id="carousel-column">
+            <div id="carousel-wrapper">
+              <div class="box" id="carousel-box">
+                <div class="carousel" id="carousel">
+                  <div class="item item-1">
+                    <div class="card">
+                      <div class="card-image">
+                        <figure class="image">
+                          <img src="pfp/J.jpg" alt="PFP J"></img>
+                        </figure>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item item-2">
+                    <div class="card">
+                      <div class="card-image">
+                        <figure class="image">
+                          <img src="pfp/I.jpg" alt="PFP J"></img>
+                        </figure>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item item-3">
+                    <div class="card">
+                      <div class="card-image">
+                        <figure class="image">
+                          <img src="pfp/H.jpg" alt="PFP J"></img>
+                        </figure>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>-->
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="shop">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-full-mobile is-6-tablet is-4-desktop is-3-widescreen is-3-fullhd">
+            <div class="box subheading">
+              <article class="media">
+                <div class="media-left">
+                  <a href="#">
+                    <figure class="image is-48x48 is-hidden-mobile">
+                      <img src="assets/Latios-logo-sj.png" alt="Image">
+                    </figure>
+                    <figure class="image is-48x48 is-hidden-tablet">
+                      <img src="assets/Latios-logo-sj-shiny.png" alt="Image">
+                    </figure>
+                  </a>
+                </div>
+                <div class="media-content">
+                  <div class="content">
+                    <h1 class="title">
+                      SHOP
+                    </h1>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="column is-full-mobile is-6-tablet is-4-desktop is-3-widescreen is-3-fullhd">
+            <a href="https://gumroad.com/svlt" class="button is-white is-large wide"><i class="fas fa-book-open"></i> &nbsp; ZINES</a>
+            <a href="https://www.inprnt.com/gallery/svlt/" class="button is-white is-large wide"> &nbsp; <i class="fas fa-file-image"></i> &nbsp; PRINTS</a>
+            <a href="https://ko-fi.com/svltart" class="button is-white is-large wide"><i class="fas fa-coffee" data-fa-transform="flip-h"></i> &nbsp; KO-FI</a>
+          </div>
+
+          <div class="column is-hidden-touch is-4-desktop is-6-widescreen is-6-fullhd">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="commissions">
+      <div class="container">
+        <div class="box subheading">
+          <article class="media">
+            <div class="media-left">
+              <a href="#">
+                <figure class="image is-48x48">
+                  <img src="assets/Latios-logo-sj-shiny.png" alt="Image">
+                </figure>
+              </a>
+            </div>
+            <div class="media-content">
+              <div class="content">
+                <h1 class="title">
+                  COMMISSIONS
+                </h1>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="columns is-multiline">
+          <div class="column is-full-mobile is-half-tablet is-half-desktop is-5-widescreen is-5-fullhd">
+            <h1 class="title">
+              OFFERS AND INSTRUCTIONS
+            </h1>
+            <div class="card">
+              <div class="card-content">
+                <p class="subtitle">Commissions can be requested through Direct Messages on social media sites, or through email; click on the button below for contact information. Please carefully read commission information and rules prior to requesting a commission.</p>
+                <p class="subtitle"><strong>Pricing for personal use only; please contact via email for commercial inquiries.</strong></p>
+                <p class="subtitle">I am available for non-fanart commissions as well (background, illustrations, etc.).</p>
+                <p><a href="#contact" class="button is-white">CONTACT INFORMATION</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="columns is-multiline">
+          <div class="column is-full-mobile is-full-tablet is-half-desktop is-half-widescreen is-half-fullhd">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image">
+                  <img src="assets/ad 1.jpg" alt="Cover image">
+                </figure>
+              </div>
+            </div>
+          </div>
+          <div class="column is-full-mobile is-full-tablet is-half-desktop is-half-widescreen is-half-fullhd">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image">
+                  <img src="assets/ad 2.jpg" alt="Item 1">
+                </figure>
+              </div>
+              <div class="card-image">
+                <figure class="image">
+                  <img src="assets/ad 3.jpg" alt="Item 2">
+                </figure>
+              </div>
+            </div>
+          </div>
+          <div class="column is-full-mobile is-full-tablet is-half-desktop is-one-third-widescreen is-one-third-fullhd">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image">
+                  <img src="assets/ad 4.jpg" alt="Surcharges 1">
+                </figure>
+              </div>
+            </div>
+          </div>
+          <div class="column is-full-mobile is-full-tablet is-half-desktop is-one-third-widescreen is-one-third-fullhd">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image">
+                  <img src="assets/ad 5.jpg" alt="Surcharges 2">
+                </figure>
+              </div>
+            </div>
+          </div>
+          <div class="column is-full-mobile is-full-tablet is-half-desktop is-two-thirds-widescreen is-two-thirds-fullhd">
+            <div class="card">
+              <div class="card-content">
+                <div class="content">
+                  <h1>RULES</h1>
+                  <p>At least 50% of the cost must be paid before work starts; turnaround time can be up to three weeks after initial payment.</p>
+                  <p>Payment must be made over PayPal.</p>
+                  <p>Any setting (real life, canon, original, etc.) is fair game!<p>
+                  <p>Pokémon will be drawn on-model; recoloured designs are OK.</p>
+                  <p>Given space constraints, a maximum Pokémon limit (usually 3) will be set depending on the complexity of Pokémon designs.</p>
+                  <p>Original species, humans and animals may be available upon request; references must be provided.</p>
+                  <p>Accessories will be allowed, but extensive clothing will not.</p>
+                  <p>Feel free to provide references for setting, but please understand that they will not be copied as-is unless I am provided a source and explicit permission to copy as I cannot verify usage rights.</p>
+                  <p>Shipping will be through Canada Post and your local public mail service. A quote will be provided if you choose to order the physical copy.</p>
+                  <h1>TERMS OF SERVICE</h1>
+                  <p>The artist reserves the right to use for all material commissioned, and the client has the right to personal use with appropriate credit in public spaces, as defined by the following conditions for appropriateness: either the name of the artist or a link to the artist's social media must be clearly displayed within the immediate setting of the artwork.</p>
+                  <p>The client may under no circumstances use the commissioned material in commercial settings, including, but not limited to, advertisement, monetised online content, and merchandise.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h1 class="title">
+          PREVIOUS COMMISSIONS
+        </h1>
+        <div class="columns is-mobile is-multiline" id="past-commissions">
+          <div class="column is-10-mobile is-7-tablet is-6-desktop is-4-widescreen is-4-fullhd">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image">
+                  <img src="commissions/5.png" alt="Commission A">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  COMMISSION FOR @C437RP13
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column is-10-mobile is-7-tablet is-6-desktop is-4-widescreen is-4-fullhd">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image">
+                  <img src="commissions/1.png" alt="Commission A">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  COMMISSION FOR @vergolophus
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column is-10-mobile is-7-tablet is-6-desktop is-4-widescreen is-4-fullhd">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image">
+                  <img src="commissions/4.png" alt="Commission A">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  COMMISSION
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column is-10-mobile is-7-tablet is-6-desktop is-4-widescreen is-4-fullhd">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image">
+                  <img src="commissions/3.png" alt="Commission A">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  COMMISSION
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="column is-10-mobile is-7-tablet is-6-desktop is-4-widescreen is-4-fullhd">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image">
+                  <img src="commissions/2.png" alt="Commission A">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  COMMISSION
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="art">
+      <div class="container">
+        <div class="box subheading">
+          <article class="media">
+            <div class="media-left">
+              <a href="#">
+                <figure class="image is-48x48">
+                  <img src="assets/Latios-logo-sj-shiny.png" alt="Image">
+                </figure>
+              </a>
+            </div>
+            <div class="media-content">
+              <div class="content">
+                <h1 class="title">
+                  GALLERY
+                </h1>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="pfp">
+      <div class="container">
+        <div class="columns is-mobile is-multiline">
+          <div class="column is-10-mobile is-8-tablet is-7-desktop is-9-widescreen is-9-fullhd">
+            <div class="box" id="map">
+              <div class="box inner-title">
+                <h1 class="title">
+                  POKÉMON FROM PLACES
+                </h1>
+                <p class="subtitle">
+                  Each piece in this series imagines Pokémon living in our real world and depicts a real-life location with Pokémon caught in <i>Pokémon GO</i>.
+                </p>
+                <p class="subtitle">
+                  Pieces are also compiled into zines which showcase a single region and features exclusive artwork, blurbs, and short anecdotes about each location.
+                </p>
+              </div>
+              <p class="is-hidden-desktop"><i class="fas fa-arrow-right"></i> Scroll right to see select works.</p>
+              <div class="buttons">
+                <a href="https://svltart.tumblr.com/tagged/places" class="button is-white">MORE ON TUMBLR</a>
+                <a href="https://gumroad.com/svlt" class="button is-white">DOWNLOAD ZINES</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="column is-10-mobile is-7-tablet is-6-desktop is-4-widescreen is-4-fullhd">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-3by2">
+                  <img src="pfp/J.jpg" alt="Pokémon from Places J">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  OCEANSIDE, CA
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="column is-10-mobile is-7-tablet is-6-desktop is-4-widescreen is-4-fullhd">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-3by2">
+                  <img src="pfp/I.jpg" alt="Pokémon from Places I">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  MONTEREY, CA
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="column is-10-mobile is-7-tablet is-6-desktop is-4-widescreen is-4-fullhd">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-3by2">
+                  <img src="pfp/B.jpg" alt="Pokémon from Places B">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  MT. ST. HELENS, WA
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="column is-10-mobile is-7-tablet is-6-desktop is-4-widescreen is-4-fullhd">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-3by2">
+                  <img src="pfp/C.jpg" alt="Pokémon from Places C">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  HONOLULU, HAWAII
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="column is-10-mobile is-7-tablet is-6-desktop is-4-widescreen is-4-fullhd">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-3by2">
+                  <img src="pfp/A.jpg" alt="Pokémon from Places A">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  PORTLAND, OR
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="column is-10-mobile is-7-tablet is-6-desktop is-4-widescreen is-4-fullhd">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-3by2">
+                  <img src="pfp/D.jpg" alt="Pokémon from Places D">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  CALIFORNIA
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="column is-10-mobile is-7-tablet is-6-desktop is-4-widescreen is-4-fullhd">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-3by2">
+                  <img src="pfp/E.jpg" alt="Pokémon from Places E">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  LOS ANGELES, CA
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="column is-10-mobile is-7-tablet is-6-desktop is-4-widescreen is-4-fullhd">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-3by2">
+                  <img src="pfp/F.jpg" alt="Pokémon from Places F">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  LOS ANGELES, CA
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="column is-10-mobile is-7-tablet is-6-desktop is-4-widescreen is-4-fullhd">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-3by2">
+                  <img src="pfp/G.jpg" alt="Pokémon from Places G">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  SAN DIEGO, CA
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="column is-10-mobile is-7-tablet is-6-desktop is-4-widescreen is-4-fullhd">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-3by2">
+                  <img src="pfp/H.jpg" alt="Pokémon from Places H">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  GRAND CANYON, AZ
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="column is-10-mobile is-7-tablet is-6-desktop is-4-widescreen is-4-fullhd">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-3by2">
+                  <img src="pfp/K.jpg" alt="Pokémon from Places K">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  UTAH
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="box subheading">
+          <article class="media">
+            <div class="media-left">
+              <a href="#">
+                <figure class="image is-48x48">
+                  <img src="assets/Latios-logo-sj-shiny.png" alt="Image">
+                </figure>
+              </a>
+            </div>
+            <div class="media-content">
+              <div class="content">
+                <h1 class="title">
+                  CONTACT
+                </h1>
+              </div>
+            </div>
+          </article>
+        </div><br>
+
+        <div class="box subheading">
+          <table class="table">
+            <tbody>
+              <tr>
+                <td><p class="subtitle"><i class="fab fa-twitter"></i></p></td>
+                <td><p class="subtitle">TWITTER</p></td>
+                <td><p class="subtitle"><a href="https://twitter.com/svltart">@svltart</a></p></td>
+              </tr>
+              <tr>
+                <td><p class="subtitle"><i class="fab fa-tumblr"></i></p></td>
+                <td><p class="subtitle">TUMBLR</p></td>
+                <td><p class="subtitle"><a href="https://svltart.tumblr.com/">@svltart</a></p></td>
+              </tr>
+              <tr>
+                <td><p class="subtitle"><i class="fab fa-instagram"></i></p></td>
+                <td><p class="subtitle">INSTAGRAM</p></td>
+                <td><p class="subtitle"><a href="https://instagram.com/svltart">@svltart</a></p></td>
+              </tr>
+              <tr>
+                <td><p class="subtitle"><i class="fas fa-envelope"></i></p></td>
+                <td><p class="subtitle">EMAIL</p></td>
+                <td><p class="subtitle"><a href="mailto:svlt.draws@gmail.com">svlt.draws@gmail.com</a></p></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://kit.fontawesome.com/a9d781149c.js" crossorigin="anonymous"></script>
+    <!--<script src="bulma-carousel.min.js"></script>-->
+    <!--<script>
+  		bulmaCarousel.attach('#carousel', {
+        pagination: true,
+  			autoplay: true,
+        loop: true,
+        infinite: true,
+        pauseOnHover: true,
+        breakpoints: [
+          { changePoint: 480, slidesToShow: 1, slidesToScroll: 1 },
+          { changePoint: 640, slidesToShow: 1, slidesToScroll: 1 },
+          { changePoint: 768, slidesToShow: 1, slidesToScroll: 1 }
+        ],
+  		});
+		</script>-->
+  </body>
+</html>
