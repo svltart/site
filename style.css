@@ -5,7 +5,6 @@
 
 html {
   scroll-behavior: smooth;
-  background-color: 00a79d;
 }
 
 * {
@@ -13,63 +12,10 @@ html {
 }
 
 body {
-  background-color: #00a79d;
+  background-color: #ffffff;
   background-attachment: fixed;
   background-position: center;
   background-size: 100%;
-}
-
-#moon {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #0f2556;
-  background-image: url(assets/alola-moon-nt.svg) !important;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-}
-
-
-#ultra-sun {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #00a79d;
-  background-image: url(assets/alola-ultra-sun-nt.svg) !important;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-}
-
-#ultra-moon {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #00aeef;
-  background-image: url(assets/alola-ultra-moon-nt.svg) !important;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-}
-
-#sun {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #ffeabe;
-  background-image: url(assets/alola-sun-nt.svg) !important;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
 }
 
 .go-home {
@@ -79,7 +25,7 @@ body {
   right: 60px;
   width: 60px;
   height: 64px;
-  color: #fff;
+  color: #222;
   padding-top: 20px;
   background-color: #363636;
   border-radius: 0 0 10px 10px;
@@ -89,7 +35,7 @@ body {
 
 .go-home:hover {
   padding-top: 18px;
-  color: #fff;
+  color: #222;
   background-color: #242424;
 }
 
@@ -100,13 +46,13 @@ body {
 #title {
   font-weight: 100;
   font-size: 72px;
-  color: white;
+  color: #058bce;
   margin-bottom: 1px;
 }
 
 #subtitle {
   font-weight: 100;
-  color: white;
+  color: #555;
 }
 
 .wide {
@@ -116,75 +62,13 @@ body {
   background: rgba(255, 255, 255, 0.95);
 }
 
-#carousel-column {
-  margin-bottom: 10px;
-}
-
-#carousel-wrapper {
-  position: relative;
-  height: 100%;
-}
-
-#carousel-box {
-  min-height: 340px;
-  max-height: 340px;
-  bottom: 0px;
-}
-
-@media only screen and (min-width: 769px) {
-  #carousel-box {
-    position: absolute;
-    width: 100%;
-  }
-}
-
-#carousel {
-  overflow: hidden;
-}
-
-.carousel:focus, .slider:focus, .slider-coverer:focus {
-  outline: none;
-}
-
-.slider-item, .item {
-  max-width: 460px;
-}
-
-#carousel .card {
-  margin-right: 10px;
-  min-height: 300px;
-  max-width: 450px;
-}
-
-#carousel .card-image {
-  min-width: 450px;
-}
-
-.slider-navigation-previous, .slider-navigation-next {
-  margin: 0 10px;
-  width: 20px;
-  height: 20px;
-}
-
-.slider-pagination {
-  display: block;
-}
-
-#home .button {
-  color: #ee2a7b;
-}
-
-#shop .button {
-  color: #ed422b;
-}
-
 #tag {
   font-size: 18px;
   color: white;
 }
 
 .button.is-text {
-  color: #ffffff !important;
+  color: #555 !important;
   text-decoration: none;
   margin-bottom: 10px;
 }
@@ -249,71 +133,4 @@ body {
   #pfp .is-multiline, .is-desktop-multiline {
     flex-wrap: nowrap;
   }
-}
-
-#map {
-  background-image: url(assets/pfpmap.png);
-  background-image: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0)), url(assets/pfpmap.png), linear-gradient(to right, rgba(0,167,157,0), rgba(0,167,157,1));
-  background-position: left 0, right -160px bottom 50%, right -160px bottom 50%;
-  background-size: 1200px 110%, auto 110%, auto 110%;
-  background-repeat: no-repeat;
-  overflow: clip;
-  min-height: 100%;
-}
-
-#map * {
-  z-index: 1;
-}
-
-#map .is-white {
-  background: #f5ab73;
-  color: #ffffff;
-}
-
-#map .is-white:hover {
-  background: #f0a066;
-}
-
-#map .is-white:active {
-  background: #ea9459;
-}
-
-.box.inner-title {
-  box-shadow: none;
-  display: inline-block;
-  padding: 10px;
-  margin: -10px -10px 0 -10px;
-}
-
-#commissions .is-white {
-  background: #00a79d;
-  color: #ffffff;
-}
-
-#commissions .is-white:hover {
-  background: #006e6d;
-}
-
-#commissions .is-white:active {
-  background: #00343d;
-}
-
-#commissions .card h1 {
-  color: #00a79d;
-}
-
-.table {
-  background: none;
-}
-
-#contact a {
-  color: #00a79d;
-}
-
-#contact a:hover {
-  color: #006e6d;
-}
-
-#contact a:active {
-  color: #00343d;
 }
