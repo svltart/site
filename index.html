@@ -5,13 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SVLT</title>
     <link rel="icon" href="assets/latios logo 23 small.png">
-    <link rel="stylesheet" href="bulma.min.css">
-    <!--<link rel="stylesheet" href="bulma-carousel.min.css">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/1.0.0/css/bulma.min.css">
     <link rel="stylesheet" href="style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
-    <script src="debounce.min.js"></script>
-    <script src="bg.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   </head>
   <body>
     <div class="is-hidden-mobile" id="ultra-sun"></div>
@@ -26,8 +22,7 @@
     <section class="section" id="home">
       <div class="container">
         <div class="columns">
-          <div class="column is-full-mobile is-6-tablet is-4-desktop is-3-widescreen is-3-fullhd">
-
+          <div class="column is-full-mobile is-6-tablet is-5-desktop is-4-widescreen is-3-fullhd">
             <article class="media">
               <div class="media-left">
                 <figure class="image is-64x64">
@@ -43,8 +38,16 @@
               </div>
             </article>
 
-            <h1 class="title" id="subtitle">TRADITIONAL ARTIST<br>(among other things)</h1>
-            <p class="is-hidden-touch" id="tag">ON ALL SOCIAL SITES: @svltart<p>
+            <h1 class="title" id="subtitle">ILLUSTRATOR & TRADITIONAL ARTIST <i>(among other things)</i></h1>
+            <div class="is-hidden">
+              <p id="tag">ON BLUESKY: @svlt<p>
+              <p id="tag">ON ALL OTHER SOCIAL SITES: @svltart<p>
+            </div>
+            <a href="https://bsky.app/profile/svlt.bsky.social" class="button is-text is-large">
+              <span class="icon is-large">
+                <i class="fa-brands fa-2x fa-bluesky"></i>
+              </span>
+            </a>
             <a href="https://twitter.com/svltart" class="button is-text is-large">
               <span class="icon is-large">
                 <i class="fab fa-2x fa-twitter"></i>
@@ -70,6 +73,5 @@
       </div>
     </section>
 
-    <script src="https://kit.fontawesome.com/a9d781149c.js" crossorigin="anonymous"></script>
   </body>
 </html>
